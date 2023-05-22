@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* custom scrollbar styles */
+.custom-scrollbar-style::-webkit-scrollbar{
+   @apply  w-[6px] 
+}
+
+.custom-scrollbar-style::-webkit-scrollbar-thumb{
+ @apply bg-[#4a5568] border-[3px] hidden
+}
+.custom-scrollbar-style:hover::-webkit-scrollbar-thumb{
+    @apply bg-[#718096] block
+}
+
+/* contact input field  */
+.form-input {
+    @apply px-[5px] py-[10px] outline-none rounded-[7px] pl-[20px]
+}
+
+/*  padding: 10px 5px;
+ outline: none;
+ border-radius: 7px; */
