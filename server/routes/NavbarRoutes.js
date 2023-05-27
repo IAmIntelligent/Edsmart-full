@@ -8,6 +8,7 @@ router.post("/", async (req, res) => {
         const { title, url } = req.params
         const createdNavBar = await NavbarLink({ title, url }).save()
         res.status(201).json(createdNavBar)
+        console.log(title,url)
     } catch (error) {
         console.error("Uploading Erro", error)
         res.status(500).json({ error: "Server Error" })
